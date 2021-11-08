@@ -28,7 +28,7 @@ jobs:
         #  porter_version: v0.38.1
       - name: Pull in porter mixins
         run: |
-          porter mixins install terraform --url https://github.com/squillace/porter-pac/releases/download 
+          porter mixins install terraform 
       - name: Login to GitHub Packages OCI Registry
         uses: docker/login-action@v1
         with:
